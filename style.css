@@ -1,3 +1,41 @@
-body {
-    background: pink;
+
+img {
+    max-width: 100px;
+}
+
+.containerOne{
+    border-style: solid;
+    border-width: 5px;
+    background-color: coral;
+
+}
+ .containerTwo {
+    border-style: solid;
+    border-width: 10px;
+    background-color: rgb(80, 255, 211);
+ }
+
+@media only screen and (min-width:600px) {
+    body {
+        background-color: blue;
+    }
+    
+    p {
+        color: white;
+    }
+}
+
+@media only screen and (max-width:599px) {
+    body {
+        background-color: pink;
+    }
+    .containerTwo {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 200px;
+        height: 100px;
+        border: 3px solid #73AD21;
+    }
+    
 }
