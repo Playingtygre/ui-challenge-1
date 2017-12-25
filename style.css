@@ -3,13 +3,20 @@ body {
 background-color: blanchedalmond;
 }
 
+h2, h3 {
+    color: beige;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: bold;
+}
+
 .column-layout {
     max-width: 1300px;
-    background-color: aquamarine;
+    background-color: #31ffad;
     margin: 40px auto 0 auto;
     line-height: 1.65;
     padding: 20px 50px;
-    display: flex;
+    /* display: flex; */
 }
 
 .sidebar-one {
@@ -30,19 +37,54 @@ background-color: blanchedalmond;
 .cointainer {
     max-width: 1400px;
     margin: 40px auto 0 auto;
+    justify-content: center;
 }
+
+    @media (min-width:800px){
+        .cointainer{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .column-layout {
+        display: flex;
+        }
+
+    }
+
+    @media (max-width:800px){
+
+        body {
+            background-color: black;
+        }
+
+        #feat1 {
+            background-color: rgb(29, 187, 37);
+        }
+
+        #feat1 {
+            background-color: rgb(15, 152, 170);
+        }
+
+        #feat1 {
+            background-color: rgb(207, 74, 201);
+        }
+
+    }
 
 .call-out {
     padding: 20px;
+    box-sizing: border-box;
     margin-bottom: 20px;
+    flex-basis: 30%;
 }
 
 .call-out:nth-child(1) {
-    background-color: red;
+    background-color: #ff5031;
 }
 
 .call-out:nth-child(2) {
-    background-color: pink;
+    background-color:#ffb731;
 }
 
 .call-out:nth-child(3) {
