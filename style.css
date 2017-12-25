@@ -14,12 +14,37 @@ background-color: blanchedalmond;
 
 .sidebar-one {
     flex:1;
+    order:1; 
 }
 
 .sidebar-two{
     flex: 1;
+    order: 3;
 }
 
 .main-column {
-    flex: 1;
+    flex: 2;
+    order: 2;
+}
+
+.cointainer {
+    max-width: 1400px;
+    margin: 40px auto 0 auto;
+}
+
+.call-out {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.call-out:nth-child(1) {
+    background-color: red;
+}
+
+.call-out:nth-child(2) {
+    background-color: pink;
+}
+
+.call-out:nth-child(3) {
+    background-color: green;
 }
